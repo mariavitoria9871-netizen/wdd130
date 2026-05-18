@@ -1,0 +1,5 @@
+Leitura anterior: 1.030 quilomêtros
+Leiruta atual: 2.010 quilomêtros
+Distância: 980 quilomêtros980
+Quantidade abastecida: 30 litros
+Eficiência Km/L: 32.67
