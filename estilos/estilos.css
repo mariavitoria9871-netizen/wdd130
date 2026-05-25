@@ -94,10 +94,18 @@ footer {
 
 .grid {
     display: grid;
-    align-items: center;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    align-items: start;
 }
 
 main {
     grid-column: 2/3;
     margin: 1rem;
+}
+
+aside {
+    grid-column: 1/2;
+    margin-top: 250px;
+    width: 300px;
 }
