@@ -39,7 +39,7 @@ def criar_tabela_periodica():
         "N": ["Nitrogênio", 14.0067],
         "O": ["Oxigênio", 15.9994],
         "F": ["Flúor", 18.9984032],
-        "Ne": ["Néon", 20.1797],
+        "Ne": ["Neônio", 20.1797],
         "Na": ["Sódio", 22.98976928],
         "Mg": ["Magnésio", 24.305],
         "Al": ["Alumínio", 26.9815386],
@@ -62,7 +62,7 @@ def criar_tabela_periodica():
         "Zn": ["Zinco", 65.38],
         "Ga": ["Gálio", 69.723],
         "Ge": ["Germânio", 72.64],
-        "As": ["Arsênico", 74.9216],
+        "As": ["Arsênio", 74.9216],
         "Se": ["Selênio", 78.96],
         "Br": ["Bromo", 79.904],
         "Kr": ["Criptônio", 83.798],
@@ -114,7 +114,7 @@ def criar_tabela_periodica():
         "Pb": ["Chumbo", 207.2],
         "Bi": ["Bismuto", 208.9804],
         "Po": ["Polônio", 209],
-        "At": ["Ástato", 210],
+        "At": ["Astato", 210],
         "Rn": ["Radônio", 222],
         "Fr": ["Frâncio", 223],
         "Ra": ["Rádio", 226],
@@ -146,7 +146,7 @@ def main():
     massa_amostra = float(input("Insira a massa em gramas da amostra: "))
 
     dic_da_tabela_periodica = criar_tabela_periodica()
-    lista_quantidade_simbolos = interpretar_formula(formula)
+    lista_quantidade_simbolos = interpretar_formula(formula, dic_da_tabela_periodica)
 
     massa_molar = calcular_massa_molar(
         lista_quantidade_simbolos,
