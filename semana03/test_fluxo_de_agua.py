@@ -19,3 +19,22 @@ def test_calc_perda_pressao_tubo():
     assert calc_perda_pressao_tubo(0.048692, 200.0, 0.018, 0.00) == approx(0.000, abs=0.001)
     assert calc_perda_pressao_tubo(0.048692, 200.0, 0.018, 1.75) == approx(-133.008, abs=0.001)
     assert calc_perda_pressao_tubo(0.048692, 200.0, 0.018, 1.65) == approx(-100.462, abs=0.001)
+
+def test_calc_perda_pressao_conexoes():
+    assert calc_perda_pressao_conexoes(0.0, 4) == approx(0.000, abs=0.001)
+    assert calc_perda_pressao_conexoes(1.65, 0) == approx(0.000, abs=0.001)
+    assert calc_perda_pressao_conexoes(1.65, 4) == approx(-0.217, abs=0.001)
+
+
+def test_calc_num_reynolds():
+    assert calc_num_reynolds(0.048692, 0.0) == approx(0.000, abs=0.001)
+    assert calc_num_reynolds(0.048692, 1.65) == approx(80069.074, abs=0.001)
+
+
+def test_calc_perda_pressao_reducao_tubo():
+    reynolds = calc_num_reynolds(0.28687, 1.65)
+    assert calc_perda_pressao_reducao_tubo(0.28687, 1.65, reynolds, 0.048692) == approx(-164.016, abs=0.001)
+
+
+if __name__ == "__main__":
+    pytest.main(["-v", "--tb=line", "-rN", __file__])

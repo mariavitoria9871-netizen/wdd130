@@ -47,18 +47,15 @@ def calc_pressao_pela_altura(altura):
 
 
 def calc_perda_pressao_tubo(diametro_tubo, comprimento_tubo, fator_atrito, velocidade_fluido):
-    mumerador = -fator-atrito * comprimento_tubo * DENSIDADE_AGUA * velocidade_fluido ** 2
-    denomenador = 200 * diametro_tubo
-    return numerador / denomenador
-
+    return -fator_atrito * comprimento_tubo * DENSIDADE_AGUA * velocidade_fluido ** 2 / (2000 * diametro_tubo)
 
 def calc_perda_pressao_conexoes(velocidade_fluido, quantidade_conexoes):
     return -0.04 * DENSIDADE_AGUA * velocidade_fluido ** 2 * quantidade_conexoes / 2000
 
 
 def calc_num_reynolds(diametro_hidraulico, velocidade_fluido):
-    # TODO: Implementar corretamente
-    return 0
+    viscosidade_dinamica = 0.0010016
+    return (DENSIDADE_AGUA * velocidade_fluido * diametro_hidraulico) / viscosidade_dinamica
 
 
 def calc_perda_pressao_reducao_tubo(diametro_maior, velocidade_fluido, numero_reynolds, diametro_menor):
