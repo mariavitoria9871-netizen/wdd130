@@ -47,9 +47,9 @@ nav, p, section, article {
     padding: 8px;
 }
 header {
-    display: flex;
+    display: grid;
+    grid-template-columns: 250px 1fr;
     align-items: center;
-    gap: 20px;
 }
 
 header img {
@@ -109,4 +109,26 @@ header h1 {
 .socialmedia img {
     width: 50px;
     height: auto;
+}
+
+.adventure {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    text-align: center;
+    align-items: center;
+}
+
+.adventure h2 {
+    grid-column: 1 / 6;
+}
+
+.adventure figure {
+    margin: 0;
+}
+
+.adventure img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
 }
