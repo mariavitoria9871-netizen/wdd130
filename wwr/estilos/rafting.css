@@ -39,7 +39,7 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: var(--cor-secundaria);
+    color: var(--cor-primaria);
     font-weight: bold;
 }
 nav, p, section, article {
@@ -121,6 +121,7 @@ header h1 {
 
 .adventure h2 {
     grid-column: 1 / 6;
+    color: var(--cor-secundaria);
 }
 
 .adventure figure {
