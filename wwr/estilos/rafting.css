@@ -39,7 +39,7 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: var(--cor-primaria);
+    color: #055a05;
     font-weight: bold;
 }
 nav, p, section, article {
