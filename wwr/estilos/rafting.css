@@ -134,3 +134,13 @@ header h1 {
     height: 100px;
     object-fit: cover;
 }
+
+.funcionarios {
+    display: flex;
+    gap: 20px;
+}
+
+.funcionarios img {
+    width: 200px;
+    height: auto;
+}
