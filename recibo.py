@@ -1,3 +1,7 @@
+# Melhoria adicionada:
+# O programa imprime um cupom de desconto no final do recibo
+# para um dos produtos comprados pelo cliente.
+
 import csv
 from datetime import datetime
 
@@ -41,6 +45,7 @@ def main():
                 infos_produto = produtos[num_prod]
 
                 nome_produto = infos_produto[1]
+                cupom = nome_produto
                 preco = float(infos_produto[2])
 
                 print(f"{nome_produto}: {quantidade} @ {preco:.2f}")
@@ -60,7 +65,12 @@ def main():
         print("Obrigado por comprar no Empório Inkom.")
 
         data_atual = datetime.now()
-        print(data_atual.strftime("%d/%m/%Y %H:%M:%S"))
+        print(data_atual.strftime("%d/%m/%Y %H:%M"))
+
+        print()
+        print("===== CUPOM DE DESCONTO =====")
+        print(f"Ganhe 10% de desconto na próxima compra de {cupom}!")
+        print("Obrigado pela preferência!")
 
     except FileNotFoundError as erro:
         print("Erro: arquivo não encontrado")
