@@ -16,6 +16,8 @@
 body {
     font-family: var(--fonte-body);
     color: var(--cor-destaque1);
+    background-color: #fff;
+    line-height: 1.5;
 }
 
 header, main, footer {
