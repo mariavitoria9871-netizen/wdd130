@@ -2,7 +2,7 @@
 
 import tkinter as tk
 from tkinter import Frame, Label, Button
-from entrada_numero import IntEntry
+from semana06.entrada_numero import IntEntry
 
 def main():
     # Cria o objeto root do Tk.

@@ -12,13 +12,15 @@ e. escrevendo funções de teste
 f. depurando seu código
 g. qualquer outra atividade que tenha ajudado você a concluir seu projeto
 
-=============Exemplo====================
-            Tempo Gasto
-   Data       (horas)   Descrição do Trabalho
-----------  ----------  -------------------------
-2021-12-03      2.5     Escrevi duas funções do programa e duas funções de teste
-2021-12-03      0.5     Assisti um vídeo sobre ...
-=============Exemplo====================
+Data         Tempo Gasto (horas)    Descrição do Trabalho
+2026-05-20   2.0                    Planejei o projeto e defini suas funcionalidades.
+2026-05-23   1.5                    Pesquisei conceitos e exemplos relacionados ao projeto.
+2026-05-27   2.0                    Escrevi as primeiras funções do programa.
+2026-05-31   1.5                    Continuei o desenvolvimento do código principal.
+2026-06-05   1.5                    Implementei funções adicionais e organizei o programa.
+2026-06-09   1.0                    Criei as funções de teste com pytest.
+2026-06-12   1.5                    Depurei o código e corrigi erros encontrados.
+2026-06-15   1.0                    Revisei o programa e preparei os arquivos para entrega.
 
 
 2. No Canvas, envie este arquivo de texto preenchido, seu programa Python, seu arquivo de teste Python
