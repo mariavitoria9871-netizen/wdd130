@@ -1,7 +1,7 @@
 # Direitos Autorais 2020, Brigham Young University-Idaho. Todos os direitos reservados.
 
 from wwr.quimica import criar_tabela_periodica, calcular_massa_molar
-from wwr.formula import interpretar_formula, FormulaError
+from formula import interpretar_formula, FormulaError
 from pytest import approx
 import pytest
 
